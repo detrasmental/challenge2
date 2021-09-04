@@ -1,0 +1,234 @@
+:root {
+    --primary-color: #696896;
+    --secondary-color: #fff;
+    --tertiary-color: #947100;
+    --quaternary-color: #6c36cf;
+    --quinary-color: #efc88b;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* HEADER / NAV STYLES START */
+  header {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  header img {
+    width: 100px;
+    height: 65px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    opacity: 0.85;
+  }
+  
+  header img:hover {
+    background: var(--quaternary-color);
+    border-radius: 2em / 5em;
+  }
+  
+  header nav ul {
+    font-size: 1.9vw;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+  }
+  
+  header nav ul li a {
+    padding: 5px 8px;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  
+  header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 2em / 5em;
+  }
+  
+  /* MAIN STARTS */
+  .img-container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .img-container h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: var(--secondary-color);
+  }
+  
+  /* about me STARTS */
+  .section-style h3 {
+    text-align: center;
+    font-size: 30px;
+    background: var(--primary-color);
+    border-radius: 2em / 5em;
+    color: var(--secondary-color);
+    margin: 20px;
+    padding: 5px;
+  }
+  
+  .section-style p {
+    text-align: start;
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 20px;
+    color: var(--primary-color);
+    padding: 10px;
+    margin: 10px 50px;
+  }
+  
+  /* projects START */
+  .section-style {
+    margin: 10px;
+  }
+  
+  .section-style h4 {
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    font-size: 20px;
+    color: var(--secondary-color);
+    background-color: var(--quaternary-color);
+    border-radius: 2em / 5em;
+  }
+  
+  .run-buddy {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .run-buddy img {
+    max-width: 100%;
+    padding: 3px;
+    border-radius: 15px;
+    border: var(--primary-color) 4px solid;
+  }
+  
+  .run-buddy img:hover,
+  .flex-container img:hover {
+    border: var(--quaternary-color) 4px solid;
+    opacity: 0.6;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .flex-container img {
+    object-fit: cover;
+    width: 415px;
+    height: 415px;
+    padding: 3px;
+    border-radius: 15px;
+    border: var(--primary-color) 4px solid;
+  }
+  
+  /* resume STARTS*/
+  .resume-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .resume-flex img {
+    border: var(--quaternary-color) 4px solid;
+    border-radius: 15px;
+  }
+  
+  /* contact me STARTS*/
+  .contact-me div {
+    color: #cf5c36;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-me img {
+    padding: 10px;
+    max-width: 75px;
+    max-height: 75px;
+  }
+  
+  /* footer STARTS*/
+  .footer-flex {
+    padding: 25px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 2em / 5em;
+  }
+  
+  .footer-flex h2 {
+    text-align: center;
+    font-size: 25px;
+    color: var(--secondary-color);
+  }
+  
+  footer div {
+    color: var(--secondary-color);
+  }
+  
+  /* MEDIA QUERY FOR DIFFERENT SIZED SCREENS*/
+  @media screen and (max-width: 1680px) {
+    .flex-container img {
+      margin: 20px;
+      width: 215px;
+      height: 215px;
+      justify-content: space-evenly;
+    }
+  }
+  
+  @media screen and (max-width: 1010px) {
+    .flex-container img {
+      width: 415px;
+      height: 415px;
+    }
+  }
+  
+  @media screen and (max-width: 923px) {
+    .footer-flex {
+      justify-content: center;
+      flex-direction: column;
+    }
+  
+    header nav ul {
+      font-size: 8vw;
+      list-style: none;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 530px) {
+    .flex-container img {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .contact-me h5 {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
