@@ -159,13 +159,18 @@ img
 .work .content .workBx img
 {
   max-width: 100%;
-justify-content: center;
+ 
 }
 .work .content .workBxx img
 {
-    max-width: 100%;
-    justify-content: space-around;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: justify;
+    }
+
+  
 
 
 .contact
